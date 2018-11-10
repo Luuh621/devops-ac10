@@ -84,7 +84,7 @@ def cadastro_candidatos(request):
         context_instance = RequestContext(request, 
         {
             'title':'Cadastro de candidatos',
-            'candidatos': Candidatos.objects.all( ),
+            'candidato': Candidato.objects.all( ),
             'year':datetime.now().year, 
         })
     )
