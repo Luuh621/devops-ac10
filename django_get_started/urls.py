@@ -18,7 +18,7 @@ urlpatterns = patterns('',
     url(r'^about', 'app.views.about', name='about'),
     url(r'^cadastro_cursos', 'app.views.cadastro_cursos', name='cadastro_cursos'),
     url(r'^cadastro_vestibulares', 'app.views.cadastro_vestibulares', name='cadastro_vestibulares'),
-    url(r'^cadastro_candidatos', 'app.views.cadastro_candidatos', name='cadastro_candidatos'),
+    url(r'^cadastro_candidato', 'app.views.cadastro_candidato', name='cadastro_candidato'),
     url(r'^login/$',
         'django.contrib.auth.views.login',
         {
@@ -43,6 +43,6 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
-url(r'^cadastro_candidatos', 'app.views.cadastro_candidatos', name='cadastro_candidatos'),
+
  
 )
